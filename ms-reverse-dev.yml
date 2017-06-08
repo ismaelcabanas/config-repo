@@ -1,0 +1,6 @@
+server:
+  port: 9081
+
+logging:
+  level:
+    cabanas.garcia.ismael: 'INFO'
