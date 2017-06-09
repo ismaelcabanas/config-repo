@@ -20,5 +20,6 @@ eureka:
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
+  prefer-ip-address: false  
   server: 
     enableSelfPreservation: false
