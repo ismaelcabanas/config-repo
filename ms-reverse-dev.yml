@@ -1,15 +1,15 @@
 server:
   port: 0 # valor aleatorio 
 
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_ENDPOINT}
+      
 logging:
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
     org.springframework.web: 'INFO'
     cabanas.garcia.ismael: 'DEBUG'
-
-# Discovery Server Access
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
