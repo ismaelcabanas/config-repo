@@ -9,10 +9,6 @@ logging:
     cabanas.garcia.ismael: 'DEBUG'
 
 spring:
-  application:
-    name: eureka-server  # Service registers under this name
-  profiles:
-    active: ${SPRING_PROFILES_ACTIVE}
   # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
   thymeleaf:
     enabled: false     # Disable Thymeleaf
