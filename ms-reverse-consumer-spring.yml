@@ -1,5 +1,6 @@
 server:
-  port: 0   # valor aleatorio, ya que quien quiera consumir el servicio no necesita saber su endpoint sino consultar a Eureka 
+  # port: 0   # valor aleatorio, ya que quien quiera consumir el servicio no necesita saber su endpoint sino consultar a Eureka 
+  port: ${PORT:3333}
 
 # Discovery Server Access
 eureka:
