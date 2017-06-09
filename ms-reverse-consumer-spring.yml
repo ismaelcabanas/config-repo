@@ -1,0 +1,20 @@
+server:
+  port: 0   # valor aleatorio, ya que quien quiera consumir el servicio no necesita saber su endpoint sino consultar a Eureka 
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_ENDPOINT}
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    org.springframework.web: 'INFO'
+    cabanas.garcia.ismael: 'DEBUG'
+
+ms:
+  reverse:
+    name: ms-reverse
+    endpoint: http://${ms.reverse.name}/reverse/
