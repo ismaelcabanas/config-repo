@@ -1,0 +1,21 @@
+# HTTP Server
+server:
+  port: ${TURBINE_PORT:9898}   # HTTP port
+
+management:
+  security:
+    enabled: false
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_ENDPOINT}
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
+    cabanas.garcia.ismael: 'DEBUG'
